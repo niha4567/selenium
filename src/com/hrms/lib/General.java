@@ -12,7 +12,7 @@ public class General extends Global {
 	public void openApplication() {
 		System.setProperty("webdriver.chrome.driver","D:\\chromedriver.exe");
 		driver=new ChromeDriver();
-		driver.navigate().to(url);
+		driver.navigate().to("http://127.0.0.1/orangehrm-2.6/Login.php");
 		System.out.println("openApplication");
 		Log.info("openApplication");
 		Reporter.log("open Application");
@@ -29,7 +29,7 @@ public class General extends Global {
 			}
 	public void loginApp() {
 		driver.findElement(By.name(txtuname)).sendKeys("pranavi");
-		driver.findElement(By.name(txtpswd)).sendKeys( );
+		driver.findElement(By.name(txtpswd)).sendKeys( "pranavi");
 		driver.findElement(By.name(loginbtn)).click();
 		System.out.println("Login Completed");
 		Log.info("Login Completed");

@@ -8,6 +8,11 @@
           <include name="tc002"/>
         </methods>
       </class> <!-- com.hrms.testscripts.TC002_Add_New_Employee -->
+      <class name="com.hrms.testscripts.TC001_Login_Logout">
+        <methods>
+          <include name="tc001"/>
+        </methods>
+      </class> <!-- com.hrms.testscripts.TC001_Login_Logout -->
       <class name="com.hrms.testscripts.TC003_EditEmployee">
         <methods>
           <include name="tc001"/>
